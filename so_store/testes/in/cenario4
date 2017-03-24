@@ -1,0 +1,15 @@
+; tamanho máximo da linha = 500 chars
+[PRODUTOS]
+STOCK = 10 12 8 14 15 6
+
+[CLIENTES]
+PRODUTO = 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 0 1 2 3 4 5 4 3 2 1 0 
+
+[ASSISTENTES]
+LISTA = A1 A2
+
+[LOJAS]
+ESPECIALIDADES = 0,1 2,3 4 5
+
+[BUFFERS]
+CAPACIDADE = 2 2 10
