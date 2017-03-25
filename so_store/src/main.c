@@ -34,7 +34,7 @@ struct indicadores Ind;     // indicadores do funcionamento do SO_Store
 struct configuracao Config; // configuração da execução do SO_Store
 
 long main_args(int, char **, char**, char**, char**);
-void print_error();
+void print_error(int);
 int check_if_flag(int, char **, int, int, int, int);
 void set_things(int, char **,int *, int *, int *, int *,
 											char **, char **, long *);
