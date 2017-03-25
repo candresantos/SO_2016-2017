@@ -1,5 +1,5 @@
 #!/bin/sh
-#Grupo 35
+#Grupo 25
 for i in $*
 do
 	OUTPUT=testes/out/$(echo $i | awk -F'/' '{print $NF}')
