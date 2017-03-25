@@ -1,3 +1,8 @@
+/*Made by: G25
+ *Carlos Santos 47805
+ *Vasco Teixeira 
+ *João Serrano 47868
+ */
 #include <assistente.h>
 #include <stdio.h>
 #include <stdlib.h>
