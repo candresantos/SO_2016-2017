@@ -60,7 +60,6 @@ void main_loja(int quant) {
 }
 
 int main(int argc, char* argv[]) {
-	int n, result;
 	char *ficEntrada = NULL;
 	char *ficSaida = NULL;
 	char *ficLog = NULL;
@@ -141,7 +140,7 @@ int main(int argc, char* argv[]) {
 long main_args(int argc, char* argv[], char **ficEntrada,
 									char **ficSaida, char **ficLog){
 	//Iteration, log flag not set, time flag not set, output not set
-	int i, l = 0, t = 0, o = 0;
+	int i = -1, l = 0, t = 0, o = 0;
 	long interval = 0;
 	//Missing input file
 	if(argc < 2){
@@ -176,7 +175,7 @@ long main_args(int argc, char* argv[], char **ficEntrada,
 void set_things(int argc, char **argv,
 					int * i, int * l, int * t, int * o,
 					 char **ficLog, char ** ficSaida, long *interval){
-	int flag;
+	int flag = -1;
 	//It's flag -l
 	if((flag = check_if_flag(argc, argv, *i, *l, *t, *o)) == 1){
 		//Change i and gives a value to ficLog
@@ -281,7 +280,7 @@ testes/out/cenario1 -l testes/log/cenario1.log -t 1000\n";
  */
 void process_maker(int quant, int **pid_pointer, int (*f)(int)){
 	//Child PID
-	pid_t pid;
+	pid_t pid = 0;
 	//Iteration and exit value
 	int i, prod;
 	for(i = 0; i < quant; i++){
@@ -314,7 +313,7 @@ void process_maker(int quant, int **pid_pointer, int (*f)(int)){
 void wait_for_process(int quant, int **ret_mem_pointer, 
 										 int *pid_pointer, int order){
 	//Interation and return value
-	int i, ret;
+	int i = -1, ret = 0;
 	for(i = 0; i < quant; i++){
 		/*Wait for the ith PID in pid_pointer, storing the exit status
 		 in ret*/
