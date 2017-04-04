@@ -18,6 +18,12 @@
 #include "so.h"
 #include "escalonador.h"
 
+//==============================================
+// DECLARAR ACESSO A DADOS EXTERNOS
+//
+extern struct configuracao Config;
+//==============================================
+
 struct escalonamento Escalonamento; // estrutura de suporte às decisões de escalonamento
 
 void escalonador_iniciar(int loja, int produto) {
