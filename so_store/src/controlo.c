@@ -20,6 +20,12 @@
 #include "prodcons.h"
 #include "controlo.h"
 
+//==============================================
+// DECLARAR ACESSO A DADOS EXTERNOS
+//
+extern struct configuracao Config;
+//==============================================
+
 struct controlo *Controlo;          // controlo da abertura do SO_Store
 
 void cond_criar(pthread_cond_t *cond, pthread_mutex_t *mutex) {
