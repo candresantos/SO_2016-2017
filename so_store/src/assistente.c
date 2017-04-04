@@ -1,4 +1,3 @@
-#include <assistente.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,6 +16,7 @@
 
 #include "main.h"
 #include "memoria.h"
+#include "assistente.h"
 
 int assistente_executar(int id) {
 	int ret;
