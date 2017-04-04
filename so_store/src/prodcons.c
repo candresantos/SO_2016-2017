@@ -19,6 +19,12 @@
 #include "controlo.h"
 #include "prodcons.h"
 
+//==============================================
+// DECLARAR ACESSO A DADOS EXTERNOS
+//
+extern struct configuracao Config;
+//==============================================
+
 struct prodcons ProdCons;
 
 //******************************************
