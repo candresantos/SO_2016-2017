@@ -23,7 +23,6 @@ extern struct indicadores Ind;
 extern struct configuracao Config;
 
 int loja_executar(int id) {
-	int n;
 	struct produto Produto;
 	int clientes_atendidos_pela_loja = 0;
 
