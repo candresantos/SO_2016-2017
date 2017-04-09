@@ -23,9 +23,13 @@
 #include "prodcons.h"
 #include "tempo.h"
 
-struct ficheiros Ficheiros; // informação sobre nomes e handles de ficheiros
+//==============================================
+// DECLARAR ACESSO A DADOS EXTERNOS
+//
+extern struct configuracao Config;
+//==============================================
 
-extern struct configuracao Config; // configuração da execução do SO_Voting
+struct ficheiros Ficheiros; // informação sobre nomes e handles de ficheiros
 
 void ficheiro_iniciar(char *fic_entrada, char *fic_saida, char *fic_log) {
 	//==============================================
@@ -163,7 +167,7 @@ int stricmp(const char *s1, const char *s2) {
 	return c1 - c2;
 }
 
-static int handler(void* user, const char* section, const char* name,
+int handler(void* user, const char* section, const char* name,
 		const char* value) {
 	struct configuracao* pconfig = (struct configuracao*) user;
 
